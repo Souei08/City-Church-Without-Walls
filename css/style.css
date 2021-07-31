@@ -21,7 +21,7 @@ body {
   .jumbotron {
    background-image: url(../Images/build.jpg);
     color: #fff;
-    padding: 200px 25px;
+    padding: 225px 25px;
   }
 
   .jumbotron h1{
@@ -43,9 +43,7 @@ body {
   .container-fluid {
     padding: 60px 50px;
   }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
+
   .logo-small {
     color: #185ADB;
     font-size: 50px;
