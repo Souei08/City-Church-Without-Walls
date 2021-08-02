@@ -159,7 +159,7 @@
           <p>Ivan</p>
         </div>
       </div>
-   
+
       <div class="col-sm-2">
         <div class="thumbnail">
           <img src="./Images/profile.png" alt="Paris" width="400" height="300">
@@ -297,22 +297,24 @@
         <p><span class="glyphicon glyphicon-envelope"></span> citychurchwithoutwalls@gmail.com</p>
       </div>
       <div class="col-sm-7 slideanim">
-        <div class="row">
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <form action="https://app.99inbound.com/api/e/HxfEdAN9" method="POST" target="_blank">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
           </div>
-          <div class="col-sm-6 form-group">
-            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-          </div>
-        </div>
-        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-        <div class="row">
-          <div class="col-sm-12 form-group">
-            <button class="btn btn-default pull-right" type="submit">Send</button>
-          </div>
-        </div>
+          <textarea class="form-control" id="messages" name="message" placeholder="Message" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+        </form>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
   <!-- Image of location/map -->
@@ -343,17 +345,18 @@
       chatbox.setAttribute("page_id", "1416231178401814");
       chatbox.setAttribute("attribution", "biz_inbox");
 
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
-          xfbml            : true,
-          version          : 'v11.0'
+          xfbml: true,
+          version: 'v11.0'
         });
       };
 
-      (function(d, s, id) {
+      (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
+        js = d.createElement(s);
+        js.id = id;
         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
@@ -366,6 +369,7 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
       integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
       crossorigin=""></script>
+      
   </div>
   <script>
     baguetteBox.run('.tz-gallery');
